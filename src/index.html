@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TheMovie</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav
+      class="container navbar navbar-expand-lg position-absolute top-0 start-50 translate-middle mt-5 fixed-top"
+    >
+      <div class="container-fluid mt-3">
+        <a class="navbar-brand me-5 text-white" href="#">TheMovie</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item me-5">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item dropdown me-5">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                MOVIES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">ACTION</a></li>
+                <li><a class="dropdown-item" href="#">ANIMATED</a></li>
+                <li><a class="dropdown-item" href="#">DRAMA</a></li>
+                <li><a class="dropdown-item" href="#">SI-FI</a></li>
+                <li><a class="dropdown-item" href="#">HORROR</a></li>
+                <li><a class="dropdown-item" href="#">MISTERY</a></li>
+                <li><a class="dropdown-item" href="#">CRIME</a></li>
+                <li><a class="dropdown-item" href="#">HULU</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown me-5">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                SERIES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">ENGLISH</a></li>
+                <li><a class="dropdown-item" href="#">NETFLIX</a></li>
+                <li><a class="dropdown-item" href="#">HULU</a></li>
+                <li><a class="dropdown-item" href="#">AMAZON PRIME</a></li>
+                <li><a class="dropdown-item" href="#">HULU</a></li>
+              </ul>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link text-white">CONTACT</a>
+            </li>
+          </ul>
+          <form class="d-flex input-group" role="search">
+            <input
+              class="form-control bg-transparent border border-success text-white"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success input-group-btn"
+              type="submit "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleControls"
+      class="carousel slide "
+      data-bs-ride="carousel"
+    >
+    <!-- first slide -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+    <div
+      class="py-4 px-3 mx-auto "
+      style="
+        background-image: url('image/dune2.png');
+        min-height: 100vh;
+        background-size: cover;
+      "
+    >
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+        <!-- Hero -->
+        <section>
+          <div class="container py-5">
+            <div class="row mb-4 align-items-center flex-lg-row-reverse">
+              <div class="col-md-6 col-xl-7 mb-4 mb-lg-0">
+                <div class="lc-block position-relative">
+                  <img
+                    class="img-fluid rounded shadow"
+                    src="image/dune2.png"
+                    sizes="(max-width: 3840px) 100vw, 3840px"
+                    width="3840"
+                    height=""
+                    alt="Photo by Richard Horvath"
+                  />
+                  <a
+                    class="position-absolute top-50 start-50 translate-middle glightbox d-flex justify-content-center align-items-center"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=8g18jFHCLXk"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="5em"
+                      height="5em"
+                      fill="currentColor"
+                      class="text-white"
+                      viewBox="0 0 16 16"
+                      lc-helper="svg-icon"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-5">
+                <div class="lc-block mb-3">
+                  <div editable="rich">
+                    <h1 class="fw-bolder display-2 text-white">
+                      Unlimited MOVIES, TV SHOWS & MORE.
+                    </h1>
+                  </div>
+                </div>
+
+                <div class="lc-block mb-4">
+                  <div editable="rich">
+                    <p class="lead text-white">
+                      Welcome to the TheMovie website. Here you can browse and download YIFY movies in excellent 720p, 1080p, 2160p 4K and 3D quality, all at the smallest file size. 
+                    </p>
+                  </div>
+                </div>
+                <div class="">
+                  <a
+                    class="btn btn-lg btn-outline-success"
+                    target="_blank"
+                    href="test.html"
+                    role="button"
+                    >WATCH NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!-- second slide -->
+    <div class="carousel-inner">
+      <div class="carousel-item ">
+    <div
+      class="py-4 px-3 mx-auto "
+      style="
+        background-image: url('image/jawa.jpg');
+        min-height: 100vh; max-height: 100vh;
+        background-size: cover;
+      "
+    >
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+        <!-- Hero -->
+        <section>
+          <div class="container py-5">
+            <div class="row mb-4 align-items-center flex-lg-row-reverse">
+              <div class="col-md-6 col-xl-7 mb-4 mb-lg-0">
+                <div class="lc-block position-relative" >
+                  <img
+                    class="img-fluid rounded shadow" 
+                    src="image/jawa.jpg"
+                    sizes="(max-width: 3840px) 100vw, 3840px"
+                    width="3840"
+                    height=""
+                    alt="Photo by Richard Horvath"
+                  />
+                  <a
+                    class="position-absolute top-50 start-50 translate-middle glightbox d-flex justify-content-center align-items-center"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=U1fu_sA7XhE"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="5em"
+                      height="5em"
+                      fill="currentColor"
+                      class="text-white"
+                      viewBox="0 0 16 16"
+                      lc-helper="svg-icon"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-5">
+                <div class="lc-block mb-3">
+                  <div editable="rich">
+                    <h1 class="fw-bolder display-2 text-white">
+                      Unlimited MOVIES, TV SHOWS & MORE.
+                    </h1>
+                  </div>
+                </div>
+
+                <div class="lc-block mb-4">
+                  <div editable="rich">
+                    <p class="lead text-white">
+                      Welcome to the TheMovie website. Here you can browse and download YIFY movies in excellent 720p, 1080p, 2160p 4K and 3D quality, all at the smallest file size. 
+                    </p>
+                  </div>
+                </div>
+                <div class="">
+                  <a
+                    class="btn btn-lg btn-outline-success"
+                    target="_blank"
+                    href="test.html"
+                    role="button"
+                    >WATCH NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- upcomming movie -->
+    <section class="bg-dark">
+      <div class="container pt-3" style="min-height: 100vh">
+        <p class="text-warning">ONLINE STREAMING</p>
+        <nav
+          class="container-fluid navbar navbar-expand-lg d-flex justify-content-between"
+        >
+          <h2 class="text-white">Up Comming Movie</h2>
+
+          <div class="">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="navBtn nav-item border rounded-pill me-1">
+                <a
+                  class="nav-link active text-white text-center"
+                  aria-current="page"
+                  href="#"
+                  >TV Shows</a
+                >
+              </li>
+
+              <li class="navBtn nav-item border rounded-pill me-1">
+                <a
+                  class="nav-link active text-white text-center"
+                  aria-current="page"
+                  href="#"
+                  >Movies</a
+                >
+              </li>
+
+              <li class="navBtn nav-item border rounded-pill me-1">
+                <a
+                  class="nav-link active text-center text-white"
+                  aria-current="page"
+                  href="#"
+                  >Anime</a
+                >
+              </li>
+              <li
+                class="navBtn nav-item border rounded-pill d-flex align-items-center justify-content-center"
+              >
+                <a
+                  class="nav-link active text-white d-inline me-2"
+                  aria-current="page"
+                  href="#"
+                >
+                  <i class="fa-solid fa-angle-left"></i>
+                </a>
+                <a
+                  class="nav-link active text-white d-inline"
+                  aria-current="page"
+                  href="#"
+                >
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="row justify-content-between">
+          <div class="card col movie_card">
+            <a
+              href="movie-detail.html"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <img src="image/chess.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Toy Story 4</h5>
+                <span class="movie_info">2019</span>
+                <span class="movie_info float-right"
+                  ><i class="fas fa-star"></i> 9 / 10</span
+                >
+              </div>
+            </a>
+          </div>
+
+          <div class="card col movie_card">
+            <a
+              href="movie-detail.html"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <img src="image/driver.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Captain Marvel</h5>
+                <span class="movie_info">2019</span>
+                <span class="movie_info float-right"
+                  ><i class="fas fa-star"></i> 9 / 10</span
+                >
+              </div>
+            </a>
+          </div>
+
+          <div class="card col movie_card">
+            <a
+              href="movie-detail.html"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <img src="image/joker.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Spider-Man: Far From Home</h5>
+                <span class="movie_info">2019</span>
+                <span class="movie_info float-right"
+                  ><i class="fas fa-star"></i> 9 / 10</span
+                >
+              </div>
+            </a>
+          </div>
+
+          <div class="card col movie_card">
+            <a
+              href="movie-detail.html"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <img src="image/ruby.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Alita: Battle Angel</h5>
+                <span class="movie_info">2019</span>
+                <span class="movie_info float-right"
+                  ><i class="fas fa-star"></i> 9 / 10</span
+                >
+              </div></a
+            >
+          </div>
+
+          <div class="card col movie_card">
+            <a
+              href="movie-detail.html"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <img src="image/jawa.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Spider-Man: Into the Spider-Verse</h5>
+                <span class="movie_info">2019</span>
+                <span class="movie_info float-right"
+                  ><i class="fas fa-star"></i> 9 / 10</span
+                >
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="bg-dark">
+      <div class="container">
+        <div
+          class="container-fluid row d-flex justify-content-center align-items-center min-h-100vh"
+          style="min-height: 100vh"
+        >
+          <div class="col">
+            <img src="image/servicse.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col">
+            <span>Our Services</span>
+            <h2 class="movie_info">Download Your Shows Watch Offline.</h2>
+            <p class="movie_info">
+              Welcome to the official YTS.MX (.LT) website. Here you can browse and download YIFY movies in excellent 720p, 1080p, 2160p 4K and 3D quality, all at the smallest file size. 
+            </p>
+            <h2 class="movie_info">Enjoy On Your TV.</h2>
+            <p class="movie_info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, sapiente?
+            </p>
+            <h2 class="movie_info">Watch Everywhere</h2>
+            <p class="movie_info">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio,
+              delectus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- top movie -->
+    <section class="bg-dark">
+      <div class="container min-h-100vh" style="min-height: 100vh">
+        <p class="text-center text-white">ONLINE STREAMING</p>
+        <h2 class="text-center text-white">Top Rated Movies</h2>
+        <div class="text-center mt-3 mb-3">
+          <button class="text-white btn btn-outline-success">TV Shows</button>
+          <button class="text-white btn btn-outline-success">Movies</button>
+          <button class="text-white btn btn-outline-success">Sport</button>
+          <button class="text-white btn btn-outline-success">
+            Documentary
+          </button>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="card col movie_card">
+            <img src="image/chess.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Toy Story 4</h5>
+              <span class="movie_info">2019</span>
+              <span class="movie_info float-right"
+                ><i class="fas fa-star"></i> 9 / 10</span
+              >
+            </div>
+          </div>
+
+          <div class="card col movie_card">
+            <img src="image/driver.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Captain Marvel</h5>
+              <span class="movie_info">2019</span>
+              <span class="movie_info float-right"
+                ><i class="fas fa-star"></i> 9 / 10</span
+              >
+            </div>
+          </div>
+
+          <div class="card col movie_card">
+            <img src="image/joker.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Spider-Man: Far From Home</h5>
+              <span class="movie_info">2019</span>
+              <span class="movie_info float-right"
+                ><i class="fas fa-star"></i> 9 / 10</span
+              >
+            </div>
+          </div>
+
+          <div class="card col movie_card">
+            <img src="image/ruby.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Alita: Battle Angel</h5>
+              <span class="movie_info">2019</span>
+              <span class="movie_info float-right"
+                ><i class="fas fa-star"></i> 9 / 10</span
+              >
+            </div>
+          </div>
+
+          <div class="card col movie_card">
+            <img src="image/jawa.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Spider-Man: Into the Spider-Verse</h5>
+              <span class="movie_info">2019</span>
+              <span class="movie_info float-right"
+                ><i class="fas fa-star"></i> 9 / 10</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- online STREAMING -->
+    <section class="">
+      <div class="container">
+        <div
+          class="row d-flex justify-content-center align-items-center min-h-100vh"
+          style="min-height: 100vh"
+        >
+          <div class="col">
+            <span class="">ONLINE STREAMING</span>
+            <h2 class="">Live Movie & TV Shows For Friends & Family</h2>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea,
+              corporis!
+            </p>
+            <span class="">HD4K</span>
+            <span class="">20K+ active Customer</span>
+          </div>
+          <div class="col img-responsive" style="object-fit: cover">
+            <img src="image/watching2.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- best tv series -->
+    <section class="bg-dark" style="--bs-bg-opacity: 0.8">
+      <div class="container py-5" style="min-height: 100vh">
+        <p class="text-center text-white">BEST TV SERIES</p>
+        <h2 class="text-center text-white m-3">World Best TV Series</h2>
+        <div class="row d-flex flex-wrap justify-content-center">
+          <div class="card col movie_card">
+            <img src="image/chess.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Toy Story 4</h5>
+              <span class="movie_info">2019</span>
+              <span class="movie_info float-right"
+                ><i class="fas fa-star"></i> 9 / 10</span
+              >
+            </div>
+          </div>
+
+          <div class="card col movie_card">
+            <img src="image/driver.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Captain Marvel</h5>
+              <span class="movie_info">2019</span>
+              <span class="movie_info float-right"
+                ><i class="fas fa-star"></i> 9 / 10</span
+              >
+            </div>
+          </div>
+
+          <div class="card col movie_card">
+            <img src="image/joker.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Spider-Man: Far From Home</h5>
+              <span class="movie_info">2019</span>
+              <span class="movie_info float-right"
+                ><i class="fas fa-star"></i> 9 / 10</span
+              >
+            </div>
+          </div>
+
+          <div class="card col movie_card">
+            <img src="image/ruby.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Alita: Battle Angel</h5>
+              <span class="movie_info">2019</span>
+              <span class="movie_info float-right"
+                ><i class="fas fa-star"></i> 9 / 10</span
+              >
+            </div>
+          </div>
+
+          <div class="card col movie_card">
+            <img src="image/jawa.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Spider-Man: Into the Spider-Verse</h5>
+              <span class="movie_info">2019</span>
+              <span class="movie_info float-right"
+                ><i class="fas fa-star"></i> 9 / 10</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- trial -->
+    <section class="bg-warning">
+      <div class="container">
+        <div
+          class="row d-flex justify-content-between align-items-center"
+          style="min-height: 10rem"
+        >
+          <div class="col">
+            <h2 class="text-white">TRIAL START FIRST 30 DAYS.</h2>
+            <p class="text-white">
+              Enter your email to create or restart your membership.
+            </p>
+          </div>
+
+          <form class="col input-group d-flex justify-content-end" role="">
+            <input
+              class="bg-0 rounded-start"
+              type="email"
+              placeholder="Enter Your Email"
+            />
+            <button
+              class="input-group-btn btn btn-outline-success float-end"
+              type="submit"
+            >
+              Get Started
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark">
+      <div class="container" style="min-height: 8rem">
+        <div
+          class="row d-flex justify-content-between g-5 align-items-top pt-5 pb-5"
+        >
+          <div class="col">
+            <h2 class="text-white">TheMovie</h2>
+            <p class="text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem, quasi?
+            </p>
+            <ul class="list-group list-group-horizontal">
+              <li
+                class="list-group-item bg-transparent border-0"
+                style="list-style: none"
+              >
+                <a href="https://www.facebook.com " class="text-decoration-none"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></a>
+              </li>
+              <li
+                class="list-group-item bg-transparent border-0"
+                style="list-style: none"
+              >
+                <a href="https://www.twitter.com" style="text-decoration: none"
+                  ><i class="fa-brands fa-square-twitter"></i
+                ></a>
+              </li>
+              <li
+                class="list-group-item bg-transparent border-0"
+                style="list-style: none"
+              >
+                <a href="https://www.pinterest.com"
+                  ><i class="fa-brands fa-square-pinterest"></i
+                ></a>
+              </li>
+              <li
+                class="list-group-item bg-transparent border-0"
+                style="list-style: none"
+              >
+                <a href="https://www.linkedin.com"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3 class="text-white">Explore</h3>
+            <ul class="list-group">
+              <li class="list-group-item bg-transparent border-0">
+                <a href="#" class="text-white text-decoration-none fs-6"
+                  >Movies</a
+                >
+              </li>
+              <li class="list-group-item bg-transparent border-0" style="">
+                <a href="#" class="text-white text-decoration-none fs-6"
+                  >TV Shows</a
+                >
+              </li>
+              <li class="list-group-item bg-transparent border-0" style="">
+                <a href="#" class="text-white text-decoration-none fs-6"
+                  >Documentary</a
+                >
+              </li>
+              <li class="list-group-item bg-transparent border-0" style="">
+                <a href="#" class="text-white text-decoration-none fs-6"
+                  >Sport</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3 class="text-white">Company</h3>
+
+            <ul class="list-group">
+              <li class="list-group-item bg-transparent border-0">
+                <a href="#" class="text-white text-decoration-none fs-6">FAQ</a>
+              </li>
+              <li class="list-group-item bg-transparent border-0" style="">
+                <a href="#" class="text-white text-decoration-none fs-6"
+                  >HELP CENTER</a
+                >
+              </li>
+              <li class="list-group-item bg-transparent border-0" style="">
+                <a href="#" class="text-white text-decoration-none fs-6"
+                  >TERMS OF USE</a
+                >
+              </li>
+              <li class="list-group-item bg-transparent border-0" style="">
+                <a href="#" class="text-white text-decoration-none fs-6"
+                  >PRAVICY</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="text-white bg-success text-center">
+        Copyright 2022 TheMOvie All Reserved
+      </p>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
